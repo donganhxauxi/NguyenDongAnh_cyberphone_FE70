@@ -1,0 +1,55 @@
+@mixin cardText($font-size, $font-weight) {
+  font-size: $font-size * 1px;
+  font-weight: $font-weight;
+  color: #1d365e;
+  padding-bottom: 1.25rem;
+}
+
+.card {
+  box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+  background-color: #f5f9fe;
+  border: none;
+  padding: 30px;
+  margin-bottom: 30px;
+
+  &__image {
+    box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+    border-radius: 8px;
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      @include cardText(20, 700);
+    }
+
+    p {
+      @include cardText(14, 400);
+    }
+
+    button {
+      background: #f5f9fe;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 4px;
+      letter-spacing: 0.03rem;
+      font-size: 10px;
+      font-weight: 600;
+      color: #2a73dd;
+      box-shadow: 2px 2px 4px #e2ebfc, -2px -2px 4px #fff;
+      transition: 0.5s;
+
+      &:hover {
+        box-shadow: inset 1px 1px 3px #e2ebfc, inset -2px -2px 5px #fff;
+      }
+    }
+
+    .fa.fa-star {
+      font-weight: 900;
+      color: #f9d412;
+      font-size: 14px;
+    }
+  }
+}

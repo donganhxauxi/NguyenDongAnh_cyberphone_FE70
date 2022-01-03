@@ -1,0 +1,28 @@
+footer {
+  padding: 120px 0 80px 0;
+  background-image: url("https://cyber-phone-dark.vercel.app/img/angle-up-light.svg");
+  background-color: #2a73dd;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-size: 14px;
+  color: white;
+  font-weight: 400;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+
+  a {
+    color: white;
+    transition: all 0.5s;
+    opacity: 1;
+  }
+
+  a:hover {
+    color: white;
+    opacity: 0.75;
+  }
+}
